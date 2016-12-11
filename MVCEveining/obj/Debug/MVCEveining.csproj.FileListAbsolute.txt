@@ -1,0 +1,80 @@
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\roslyn\csc.exe
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\roslyn\System.Collections.Immutable.dll
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\roslyn\System.Reflection.Metadata.dll
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\roslyn\vbc.exe
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\roslyn\VBCSCompiler.exe
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\roslyn\VBCSCompiler.exe.config
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\MVCEveining.dll.config
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\MVCEveining.dll
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\MVCEveining.pdb
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\Antlr3.Runtime.dll
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\Microsoft.Web.Infrastructure.dll
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\Newtonsoft.Json.dll
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\System.Web.Helpers.dll
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\System.Web.Mvc.dll
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\System.Web.Optimization.dll
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\System.Web.Razor.dll
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\System.Web.WebPages.Deployment.dll
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\System.Web.WebPages.dll
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\System.Web.WebPages.Razor.dll
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\WebGrease.dll
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\System.Web.Helpers.xml
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\System.Web.Mvc.xml
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\System.Web.Optimization.xml
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\System.Web.Razor.xml
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\System.Web.WebPages.xml
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\System.Web.WebPages.Deployment.xml
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\System.Web.WebPages.Razor.xml
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\Antlr3.Runtime.pdb
+F:\Gollis\MVC\MVCEveining\MVCEveining\bin\Newtonsoft.Json.xml
+F:\Gollis\MVC\MVCEveining\MVCEveining\obj\Debug\MVCEveining.csprojResolveAssemblyReference.cache
+F:\Gollis\MVC\MVCEveining\MVCEveining\obj\Debug\MVCEveining.dll
+F:\Gollis\MVC\MVCEveining\MVCEveining\obj\Debug\MVCEveining.pdb
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\roslyn\csc.exe
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\roslyn\System.Collections.Immutable.dll
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\roslyn\System.Reflection.Metadata.dll
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\roslyn\vbc.exe
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\roslyn\VBCSCompiler.exe
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\roslyn\VBCSCompiler.exe.config
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\MVCEveining.dll.config
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\MVCEveining.dll
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\MVCEveining.pdb
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\Antlr3.Runtime.dll
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\Microsoft.Web.Infrastructure.dll
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\Newtonsoft.Json.dll
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\System.Web.Helpers.dll
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\System.Web.Mvc.dll
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\System.Web.Optimization.dll
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\System.Web.Razor.dll
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\System.Web.WebPages.Deployment.dll
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\System.Web.WebPages.dll
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\System.Web.WebPages.Razor.dll
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\WebGrease.dll
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\System.Web.Helpers.xml
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\System.Web.Mvc.xml
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\System.Web.Optimization.xml
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\System.Web.Razor.xml
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\System.Web.WebPages.xml
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\System.Web.WebPages.Deployment.xml
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\System.Web.WebPages.Razor.xml
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\Antlr3.Runtime.pdb
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\Newtonsoft.Json.xml
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\obj\Debug\MVCEveining.csprojResolveAssemblyReference.cache
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\obj\Debug\MVCEveining.dll
+F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\obj\Debug\MVCEveining.pdb

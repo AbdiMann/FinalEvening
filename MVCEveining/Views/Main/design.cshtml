@@ -1,0 +1,268 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>design</title>
+
+    @Styles.Render("~/Content/css")
+ 
+    <style>
+        .grey{
+            background-color:grey;
+        }
+    </style>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+            <a href="~/" class="navbar-brand">Evening News</a>
+        </div>
+
+
+
+        <div class="navbar-collapse collapse pull-right">
+            <ul class="nav navbar-nav">
+                <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                <li>@Html.ActionLink("Facebook", "Home", "Design")</li>
+                <li><a href="#"><i class="fa fa-snapchat"></i> Snapchat</a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+
+
+                <li class="dropdown">
+                    <a href="" class="dropdown-toggle" data-toggle="dropdown"> Social Networks <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>@Html.ActionLink("LinkedIn","Home","Design")</li>
+                        <li><a href="#"><i class="fa fa-google-plus-circle"></i> Google+</a></li>
+                        <li><a href="#"><i class="fa fa-gamepad"></i> Gmail</a></li>
+                    </ul>
+                     
+
+
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+
+   
+
+    <div class="container">
+        <div class="jumbotron">
+            <h2>This is eveningproject</h2>
+
+            <p>
+                this is the main page of evneing project bl
+                evneing project blevneing project bl    
+            </p>
+        </div>
+
+        <hr />
+
+        <div class="row">
+            <div class=" col-sm-4 col-md-4 col-lg-4">
+                <h2>Breaking News</h2>
+                <h3>
+                    <p>
+                        this is the breaking news of our <br />
+                        evening project so you know.<br />
+                        this is the breaking news of our <br />
+                        evening project so you kno
+                    </p>
+                </h3>
+                <a href="" class="btn btn-primary">Read More..</a>
+                <a href="" class="btn btn-danger">Ignore..</a>
+
+            </div>
+
+            <div class=" col-sm-4 col-md-4 col-lg-4">
+                <h2>Most Viewed</h2>
+                <h3>
+                    <p>
+                        this is the breaking news of our <br />
+                        evening project so you know.<br />
+                        this is the breaking news of our <br />
+                        evening project so you kno
+                    </p>
+                </h3>
+                <a href="" class="btn btn-primary">Read More..</a>
+                <a href="" class="btn btn-danger">Ignore..</a>
+
+            </div>
+
+            <div class=" col-sm-4 col-md-4 col-lg-4">
+                <h2> <i class="fa fa-soccer-ball-o"></i> Sports</h2>
+                <h3>
+                    <p>
+                        this is the breaking news of our <br />
+                        evening project so you know.<br />
+                        this is the breaking news of our <br />
+                        evening project so you kno
+                    </p>
+                </h3>
+                <a href="" class="btn btn-primary">Read More..</a>
+                <a href="" class="btn btn-danger">Ignore..</a>
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+        <hr />
+
+
+        <div class="row">
+            <div class="col-lg-8">
+                <h2>Blog Post Title <small><i class="fa fa-clock-o"></i> @DateTime.Now</small></h2>
+                <div class="h3">
+                    <p>
+                        this is the breaking news of our evening project so you know.this is the breaking news of our 
+                        evening project so you kno
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="well">
+                    <img src="~/Content/slide (2).jpg" class="img-responsive img-rounded" alt="" />
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+
+
+
+
+
+
+
+
+
+    @*<div class="container">
+        <div class="row">
+
+            <div class="col-lg-12">
+                <div class="well grey">
+                    <h2> Col-lg-12</h2>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <div class="well grey">
+                    <h2> Col-lg-6</h2>
+                </div>
+            </div>
+
+            <div class=" col-sm-6 col-md-6 col-lg-6 col-xs-6">
+                <div class="well grey">
+                    <p class="clearfix">
+                         
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+                <div class="col-lg-4">
+                    <div class="well grey">
+                        <h2> Col-lg-4</h2>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="well grey">
+                        <h2> Col-lg-4</h2>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="well grey">
+                        <h2> Col-lg-4</h2>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="well grey">
+                        <h2> Col-lg-3</h2>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="well grey">
+                        <h2> Col-lg-3</h2>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="well grey">
+                        <h2> Col-lg-3</h2>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="well grey">
+                        <h2> Col-lg-3</h2>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="well grey">
+                        <h2> Col-lg-8</h2>
+                    </div>
+                </div>
+
+                <div class="col-lg-1">
+                    <div class="well grey">
+                        <h2> 1</h2>
+                    </div>
+                </div>
+                <div class="col-lg-1">
+                    <div class="well grey">
+                        <h2> 2</h2>
+                    </div>
+                </div>
+                <div class="col-lg-1">
+                    <div class="well grey">
+                        <h2> 3</h2>
+                    </div>
+                </div>
+                <div class="col-lg-1">
+                    <div class="well grey">
+                        <h2> 4</h2>
+                    </div>
+                </div>
+            </div>
+    </div>*@
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+</body>
+</html>

@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+
+<form action="/" method="get">
+    <input type="search" name="searchTerm"/>
+    <input type="submit" class="btn btn-success"/>
+</form>
+<table class="table">
+    <tr>
+        <th>
+            HumanId
+        </th>
+        <th>
+           HumanName
+        </th>
+        <th>
+            CountryName
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @item.HumanId
+        </td>
+        <td>
+            @item.HumanName
+        </td>
+        <td>
+            @item.CountryName
+
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }, new { @class ="btn btn-sm btn-success"}) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }, new { @class = "btn btn-sm btn-info" }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id }, new { @class = "btn btn-sm btn-danger" })
+        </td>
+    </tr>
+
+
+
+
+
+}
+
+</table>
