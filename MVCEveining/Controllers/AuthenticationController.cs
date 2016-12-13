@@ -40,7 +40,7 @@ namespace MVCEveining.Controllers
                     TempData["ErrorMessage"] = "Invalid Username or Password.";
                 }
             }
-            ;
+
             return View(loginForm) ;
         }
 
