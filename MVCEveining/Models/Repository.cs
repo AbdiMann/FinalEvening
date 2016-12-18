@@ -20,13 +20,19 @@ System.Configuration.ConfigurationManager.ConnectionStrings["evening"].Connectio
             using (var command = connection.CreateCommand())
             {
                 command.CommandText = @"INSERT INTO Human
-                                        (Name,Address,BirthDate)
+                                        (Name,Address,BirthDate,Image)
                                          VALUES
-                                        (@Name,@Address,@BirthDate)";
+                                        (@Name,@Address,@BirthDate,@Image)";
 
                 command.Parameters.AddWithValue("@Name", personClass.Name);
                 command.Parameters.AddWithValue("@Address", personClass.Address);
                 command.Parameters.AddWithValue("@BirthDate", personClass.BirthDate);
+
+
+
+                var bytes = new byte[personClass.Image.ContentLength];
+                personClass.Image.InputStream.Read(bytes, 0, personClass.Image.ContentLength);
+                command.Parameters.AddWithValue("@Image", bytes);
 
                 connection.Open();
                 command.ExecuteNonQuery();
@@ -42,13 +48,11 @@ System.Configuration.ConfigurationManager.ConnectionStrings["evening"].Connectio
             using (var connection = new SqlConnection(connectionString))
             using (var command = connection.CreateCommand())
             {
-                command.CommandText = @"SELECT * 
+                command.CommandText = @"SELECT *
                                         FROM users
-                                        WHERE UserName =@UserName 
+                                        WHERE UserName =@UserName
                                         and Password = @Password;
-
                                        ";
-
                 command.Parameters.AddWithValue("@UserName", username);
                 command.Parameters.AddWithValue("@Password", password);
                 connection.Open();
@@ -60,7 +64,6 @@ System.Configuration.ConfigurationManager.ConnectionStrings["evening"].Connectio
                     user.UserName = reader["UserName"] as string;
                     user.Password = reader["Password"] as string;
                 }
-
                 return user;
             }
         }
@@ -162,13 +165,33 @@ System.Configuration.ConfigurationManager.ConnectionStrings["evening"].Connectio
             }
         }
 
+        internal byte[] Getimage1(string ID)
+        {
+            using (var connection = new SqlConnection(connectionString))
+            using (var command = connection.CreateCommand())
+            {
+                command.CommandText = "SELECT Image FROM Persons WHERE id = @id";
+
+                command.Parameters.AddWithValue("@id", ID);
+                connection.Open();
+
+                var pic = command.ExecuteScalar() as byte[];
+                return pic;
+            }
+        }
+
+
+
+
+
+
         //public List<Person> GetListJoin()
         //{
         //    using (var connection = new SqlConnection(connectionString))
         //    using (var command = connection.CreateCommand())
         //    {
         //        command.CommandText = @"
-                                       
+
         //                                    SELECT Human.Id as HumanId,Human.Name HumanName,country.Country CountryName
         //                                    FROM Human  join country
         //                                    on Human.Id = country.HumanId
@@ -186,6 +209,27 @@ System.Configuration.ConfigurationManager.ConnectionStrings["evening"].Connectio
         //            mylists.Add(humanList);
         //        }
         //        return mylists;
+        //    }
+        //}
+
+
+
+        //internal void UpdatePhoto(User pictureUpdate, string Identity)
+        //{
+        //    using (var connection = new SqlConnection(ConnectionString))
+        //    using (var command = connection.CreateCommand())
+        //    {
+        //        command.CommandText = "UPDATE Users SET Image =@Image WHERE LoginId =@LoginId";
+
+        //        command.Parameters.AddWithValue("@LoginId", Identity);
+
+        //        var bytes = new byte[pictureUpdate.Image.ContentLength];
+        //        pictureUpdate.Image.InputStream.Read(bytes, 0, pictureUpdate.Image.ContentLength);
+        //        command.Parameters.AddWithValue("@Image", bytes);
+
+        //        connection.Open();
+
+        //        command.ExecuteNonQuery();
         //    }
         //}
     }

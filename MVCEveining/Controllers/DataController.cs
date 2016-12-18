@@ -14,11 +14,11 @@ namespace MVCEveining.Controllers
         Repository repository = new Repository();
 
 
-        //public ActionResult Create()
-        //{
-        //    ViewBag.myListJoin = repository.GetListJoin();
-        //    return View();
-        //}
+        public ActionResult Create()
+        {
+            //ViewBag.myListJoin = repository.GetListJoin();
+            return View();
+        }
 
         [HttpPost]
         public ActionResult Create(Person personClass)
@@ -32,6 +32,15 @@ namespace MVCEveining.Controllers
             return View();
         }
 
+
+
+
+
+        public ActionResult Picture(string ID)
+        {
+            var pic = repository.Getimage1(ID);
+            return File(pic, "image/jpeg");
+        }
 
         //public ActionResult List()
         //{
@@ -92,6 +101,9 @@ namespace MVCEveining.Controllers
         }
 
 
-
+        public ActionResult testtt()
+        {
+            return View();
+        }
     }
 }
