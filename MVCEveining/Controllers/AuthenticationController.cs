@@ -45,6 +45,62 @@ namespace MVCEveining.Controllers
         }
 
 
+        public ActionResult UsersList()
+        {
+            var getusers = repository.GetUsers();
+            return View(getusers);
+        }
+
+
+
+
+
+        public ActionResult CreateUser()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult CreateUser(LoginForm users)
+        {
+            if (repository != null)
+            {
+                repository.CreateUsers(users);
+          
+                TempData["SuccessMessage"] = "User updated successfully.";
+
+            }
+            return RedirectToAction("UpdateUser", new { UserId = users.UserName });
+        }
+
+        // [PermissionRequired(MVCEveining.ViewModels.Users.Permissions.Update_Users)]
+        public ActionResult UpdateUser(string userId)
+        {
+            var user = repository.GetUser(userId);
+
+            if (user == null) return View("UserNotFound");
+
+            var userForm = new UpdateUserForm(user);
+
+            ViewBag.Permissions = MVCEveining.Helpers.EnumHelpers.ToDictionary<MVCEveining.ViewModels.LoginForm.Permissions>();
+            return View(userForm);
+        }
+
+        //   [PermissionRequired(MVCEveining.ViewModels.Users.Permissions.Update_Users)]
+        [HttpPost]
+        public ActionResult UpdateUser([ModelBinder(typeof(UserFormModelBinder))] UpdateUserForm updateUserForm)
+        {
+            if (repository != null)
+            {
+                repository.UpdateUser(updateUserForm);
+                HttpContext.Cache[string.Format("{0}'s CurrentPermissions", updateUserForm.UserName)] = updateUserForm.CurrentPermissions;
+                ViewBag.Permissions = MVCEveining.Helpers.EnumHelpers.ToDictionary<MVCEveining.ViewModels.LoginForm.Permissions>();
+                TempData["SuccessMessage"] = "User updated successfully.";
+          
+            }
+            return RedirectToAction("UpdateUser", new { UserId = updateUserForm.UserName });
+        }
+
 
         public ActionResult Logout()
         {

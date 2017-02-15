@@ -40,8 +40,91 @@ System.Configuration.ConfigurationManager.ConnectionStrings["evening"].Connectio
             }
         }
 
+        public LoginForm GetUser(string userId)
+        {
+            using (var connection = new SqlConnection(connectionString))
+            using (var command = connection.CreateCommand())
+            {
+                command.CommandText = "SELECT * FROM Users WHERE UserName = @UserName ";
+
+                command.Parameters.AddWithValue("@UserName", userId);
+                // command.Parameters.AddWithValue("@MobileNumber", UserId);
+
+                connection.Open();
+
+                var reader = command.ExecuteReader();
+
+                LoginForm user = null;
+
+                if (reader.Read())
+                {
+                    user = new LoginForm();
+
+                    user.UserName = reader["UserName"] as string;
+                    if (reader["CurrentPermissions"] != DBNull.Value)
+                    {
+                        user.CurrentPermissions = (LoginForm.Permissions)reader["CurrentPermissions"];
+                    }
+
+                }
+
+                return user;
+            }
+        }
 
 
+
+        public List<LoginForm> GetUsers()
+        {
+            using (var connection = new SqlConnection(connectionString))
+            using (var command = connection.CreateCommand())
+            {
+                command.CommandText = "SELECT * FROM Users";
+                connection.Open();
+                var reader = command.ExecuteReader();
+                var users = new  List<LoginForm>();
+                if (reader.Read())
+                {
+                    var user = new LoginForm();
+                    user.UserName = reader["UserName"] as string;
+                    if (reader["CurrentPermissions"] != DBNull.Value)
+                    {
+                        user.CurrentPermissions = (LoginForm.Permissions)reader["CurrentPermissions"];
+                    }
+                    users.Add(user);
+                }
+                return users;
+            }
+        }
+
+
+
+
+        public void UpdateUser(UpdateUserForm updateUserForm)
+        {
+            using (var connection = new SqlConnection(connectionString))
+            using (var command = connection.CreateCommand())
+            {
+                command.CommandText = @"UPDATE  users SET 
+                                        FullName = @FullName,
+                                       
+                                        
+                                        --Password = @Password,
+                                        Active = @Active,
+                                        Email = @Email,
+                                        MobileNumber = @MobileNumber,
+                                        CurrentPermissions = @CurrentPermissions                                      
+                                        WHERE Id = @Id";
+
+                command.Parameters.AddWithValue("@CurrentPermissions", updateUserForm.CurrentPermissions);
+
+                connection.Open();
+
+                command.ExecuteNonQuery();
+            }
+
+            //EventsRepository.Create("User Update.", userForm.Id, HttpContext.Current.User.Identity.Name);
+        }
 
         public LoginForm Authenticate(string username, string password)
         {
@@ -181,7 +264,20 @@ System.Configuration.ConfigurationManager.ConnectionStrings["evening"].Connectio
         }
 
 
-
+        internal void CreateUsers(LoginForm create)
+        {
+            using (var conneciton = new SqlConnection(connectionString))
+            using (var command = conneciton.CreateCommand())
+            {
+                command.CommandText = @"
+                                        Insert into Users
+                                                (UserName , Password ) values (@UserName, @Password)";
+                command.Parameters.AddWithValue("@UserName", create.UserName);
+                command.Parameters.AddWithValue("@Password", create.Password);
+                 conneciton.Open();
+                command.ExecuteNonQuery();
+            }
+        }
 
 
 

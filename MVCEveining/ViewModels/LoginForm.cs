@@ -11,5 +11,17 @@ namespace MVCEveining.ViewModels
         public string UserName { get; set; }
         [DataType(DataType.Password)]
         public string Password { get; set; }
+
+        public Permissions CurrentPermissions { get; set; }
+
+        public enum Permissions
+        {
+            None = 0,
+            updateUsers = 1 << 0,
+            CreateUsers = 1 << 1,
+            RegisterCustomers = 1 << 2,
+            CustomersLst = 1 << 3
+
+        }
     }
 }

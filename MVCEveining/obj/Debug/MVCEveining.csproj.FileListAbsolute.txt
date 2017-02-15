@@ -78,3 +78,43 @@ F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\bin\Newtonsoft.Json.xml
 F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\obj\Debug\MVCEveining.csprojResolveAssemblyReference.cache
 F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\obj\Debug\MVCEveining.dll
 F:\Gollis Files\Gollis\MVC\MVCEveining\MVCEveining\obj\Debug\MVCEveining.pdb
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\obj\Debug\MVCEveining.csprojResolveAssemblyReference.cache
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\obj\Debug\MVCEveining.dll
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\obj\Debug\MVCEveining.pdb
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\roslyn\csc.exe
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\roslyn\System.Collections.Immutable.dll
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\roslyn\System.Reflection.Metadata.dll
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\roslyn\vbc.exe
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\roslyn\VBCSCompiler.exe
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\roslyn\VBCSCompiler.exe.config
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\MVCEveining.dll.config
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\MVCEveining.dll
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\MVCEveining.pdb
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\Antlr3.Runtime.dll
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\Microsoft.Web.Infrastructure.dll
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\Newtonsoft.Json.dll
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\System.Web.Helpers.dll
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\System.Web.Mvc.dll
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\System.Web.Optimization.dll
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\System.Web.Razor.dll
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\System.Web.WebPages.Deployment.dll
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\System.Web.WebPages.dll
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\System.Web.WebPages.Razor.dll
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\WebGrease.dll
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\System.Web.Helpers.xml
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\System.Web.Mvc.xml
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\System.Web.Optimization.xml
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\System.Web.Razor.xml
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\System.Web.WebPages.xml
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\System.Web.WebPages.Deployment.xml
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\System.Web.WebPages.Razor.xml
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\Antlr3.Runtime.pdb
+G:\Classes\Class MVC New Gen\Projects\MVCEveining\MVCEveining\bin\Newtonsoft.Json.xml

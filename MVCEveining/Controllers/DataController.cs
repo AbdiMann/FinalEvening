@@ -96,8 +96,6 @@ namespace MVCEveining.Controllers
                repository.Delete(delete);
                // TempData["Success"] = "Successfully Updated";
                 return RedirectToAction("Delete");
-
-
         }
 
 

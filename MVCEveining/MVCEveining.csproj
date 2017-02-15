@@ -127,12 +127,16 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\EnumHelpers.cs" />
+    <Compile Include="Helpers\PermissionRequired.cs" />
     <Compile Include="Models\Repository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\LoginForm.cs" />
     <Compile Include="ViewModels\Person.cs" />
     <Compile Include="ViewModels\PersonClass.cs" />
     <Compile Include="ViewModels\test.cs" />
+    <Compile Include="ViewModels\UpdateUserForm.cs" />
+    <Compile Include="ViewModels\UserFormModelBinder.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -190,6 +194,10 @@
     <Content Include="Views\Data\_PeopleList.cshtml" />
     <Content Include="Views\Authentication\Login.cshtml" />
     <Content Include="Views\Data\testtt.cshtml" />
+    <Content Include="Views\Shared\Unauthorized.cshtml" />
+    <Content Include="Views\Authentication\CreateUser.cshtml" />
+    <Content Include="Views\Authentication\UsersList.cshtml" />
+    <Content Include="Views\Authentication\UpdateUser.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
