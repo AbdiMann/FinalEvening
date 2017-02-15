@@ -1,4 +1,5 @@
-﻿using MVCEveining.Models;
+﻿using MVCEveining.Helpers;
+using MVCEveining.Models;
 using MVCEveining.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -13,7 +14,7 @@ namespace MVCEveining.Controllers
 
         Repository repository = new Repository();
 
-
+       [PermissionRequired(MVCEveining.ViewModels.LoginForm.Permissions.RegisterCustomers)]
         public ActionResult Create()
         {
             //ViewBag.myListJoin = repository.GetListJoin();

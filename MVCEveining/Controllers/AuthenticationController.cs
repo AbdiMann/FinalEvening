@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using System.Web.Security;
 using MVCEveining.Models;
 using MVCEveining.ViewModels;
-
+using MVCEveining.Helpers;
 
 namespace MVCEveining.Controllers
 {
@@ -32,6 +32,7 @@ namespace MVCEveining.Controllers
                 if (user != null)
                 {
                     Session["User"] = user;
+                    HttpContext.Cache[string.Format("{0}'s CurrentPermissions", loginForm.UserName)] = loginForm.CurrentPermissions;
                     FormsAuthentication.SetAuthCookie(user.UserName, false);
                     return RedirectToAction("Index", "Home");
                 }
@@ -44,7 +45,7 @@ namespace MVCEveining.Controllers
             return View(loginForm) ;
         }
 
-
+      [PermissionRequired(MVCEveining.ViewModels.LoginForm.Permissions.CustomersLst)]
         public ActionResult UsersList()
         {
             var getusers = repository.GetUsers();

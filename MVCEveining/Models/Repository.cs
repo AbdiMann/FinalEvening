@@ -106,15 +106,10 @@ System.Configuration.ConfigurationManager.ConnectionStrings["evening"].Connectio
             using (var command = connection.CreateCommand())
             {
                 command.CommandText = @"UPDATE  users SET 
-                                        FullName = @FullName,
-                                       
-                                        
-                                        --Password = @Password,
-                                        Active = @Active,
-                                        Email = @Email,
-                                        MobileNumber = @MobileNumber,
                                         CurrentPermissions = @CurrentPermissions                                      
-                                        WHERE Id = @Id";
+                                        WHERE UserName = @UserName";
+
+                command.Parameters.AddWithValue("@UserName", updateUserForm.UserName);
 
                 command.Parameters.AddWithValue("@CurrentPermissions", updateUserForm.CurrentPermissions);
 
@@ -146,11 +141,14 @@ System.Configuration.ConfigurationManager.ConnectionStrings["evening"].Connectio
                     user = new LoginForm();
                     user.UserName = reader["UserName"] as string;
                     user.Password = reader["Password"] as string;
+                    if (reader["CurrentPermissions"] != DBNull.Value)
+                    {
+                        user.CurrentPermissions = (LoginForm.Permissions)reader["CurrentPermissions"];
+                    }
                 }
                 return user;
             }
         }
-
 
         internal void Update(Person update)
         {

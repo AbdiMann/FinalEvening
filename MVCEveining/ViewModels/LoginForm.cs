@@ -14,6 +14,8 @@ namespace MVCEveining.ViewModels
 
         public Permissions CurrentPermissions { get; set; }
 
+        
+
         public enum Permissions
         {
             None = 0,
