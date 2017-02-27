@@ -14,7 +14,7 @@ namespace MVCEveining.Controllers
 
         Repository repository = new Repository();
 
-       [PermissionRequired(MVCEveining.ViewModels.LoginForm.Permissions.RegisterCustomers)]
+        [PermissionRequired(MVCEveining.ViewModels.LoginForm.Permissions.RegisterCustomers)]
         public ActionResult Create()
         {
             //ViewBag.myListJoin = repository.GetListJoin();
@@ -53,7 +53,7 @@ namespace MVCEveining.Controllers
         //}
 
 
-
+        [PermissionRequired(MVCEveining.ViewModels.LoginForm.Permissions.CustomersLst)]
         public ActionResult MyList(string searchTerm)
         {
             var myList = repository.GetList(searchTerm: searchTerm);
@@ -66,13 +66,13 @@ namespace MVCEveining.Controllers
         //    return  PartialView("_PeopleList",myList);
         //}
 
-
+        [PermissionRequired(MVCEveining.ViewModels.LoginForm.Permissions.Update)]
         public ActionResult Edit(string ID)
         {
             var myList = repository.GetListForUpdate(ID);
             return View(myList);
         }
-
+        [PermissionRequired(MVCEveining.ViewModels.LoginForm.Permissions.Update)]
         [HttpPost]
         public ActionResult Edit(Person update)
         {
@@ -85,18 +85,19 @@ namespace MVCEveining.Controllers
             return View();
         }
 
+        [PermissionRequired(MVCEveining.ViewModels.LoginForm.Permissions.Delete)]
         public ActionResult Delete(string ID)
         {
             var myList = repository.GetListForUpdate(ID);
             return View(myList);
         }
-
+        [PermissionRequired(MVCEveining.ViewModels.LoginForm.Permissions.Delete)]
         [HttpPost]
         public ActionResult Delete(Person delete)
         {
-               repository.Delete(delete);
-               // TempData["Success"] = "Successfully Updated";
-                return RedirectToAction("Delete");
+            repository.Delete(delete);
+            // TempData["Success"] = "Successfully Updated";
+            return RedirectToAction("Delete");
         }
 
 

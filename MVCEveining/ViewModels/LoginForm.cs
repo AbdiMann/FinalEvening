@@ -14,16 +14,15 @@ namespace MVCEveining.ViewModels
 
         public Permissions CurrentPermissions { get; set; }
 
-        
-
         public enum Permissions
         {
             None = 0,
             updateUsers = 1 << 0,
             CreateUsers = 1 << 1,
             RegisterCustomers = 1 << 2,
-            CustomersLst = 1 << 3
-
+            CustomersLst = 1 << 3,
+            Update = 1 << 4,
+            Delete = 1 << 5
         }
     }
 }

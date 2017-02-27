@@ -28,7 +28,7 @@ namespace MVCEveining.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = repository.Authenticate(loginForm.UserName,loginForm.Password);
+                var user = repository.Authenticate(loginForm.UserName, loginForm.Password);
                 if (user != null)
                 {
                     Session["User"] = user;
@@ -42,10 +42,10 @@ namespace MVCEveining.Controllers
                 }
             }
 
-            return View(loginForm) ;
+            return View(loginForm);
         }
 
-      [PermissionRequired(MVCEveining.ViewModels.LoginForm.Permissions.CustomersLst)]
+        [PermissionRequired(MVCEveining.ViewModels.LoginForm.Permissions.CustomersLst)]
         public ActionResult UsersList()
         {
             var getusers = repository.GetUsers();
@@ -67,7 +67,7 @@ namespace MVCEveining.Controllers
             if (repository != null)
             {
                 repository.CreateUsers(users);
-          
+
                 TempData["SuccessMessage"] = "User updated successfully.";
 
             }
@@ -97,7 +97,7 @@ namespace MVCEveining.Controllers
                 HttpContext.Cache[string.Format("{0}'s CurrentPermissions", updateUserForm.UserName)] = updateUserForm.CurrentPermissions;
                 ViewBag.Permissions = MVCEveining.Helpers.EnumHelpers.ToDictionary<MVCEveining.ViewModels.LoginForm.Permissions>();
                 TempData["SuccessMessage"] = "User updated successfully.";
-          
+
             }
             return RedirectToAction("UpdateUser", new { UserId = updateUserForm.UserName });
         }
